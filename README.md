@@ -1,2 +1,2 @@
 # portifolio
-meu portifolio
+meu portfólio profissional, exportado da plataforma Gamma.
