@@ -442,6 +442,91 @@
         font-size: 0.9rem;
       }
 
+      .experience {
+        position: relative;
+        display: grid;
+        gap: 16px;
+      }
+
+      .experience-item {
+        display: grid;
+        grid-template-columns: 170px 1fr;
+        gap: 24px;
+        padding: 24px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--surface);
+      }
+
+      .experience-date {
+        color: var(--purple);
+        font-weight: 800;
+      }
+
+      .experience-item h3 {
+        margin: 0 0 8px;
+        color: var(--text);
+        font-size: 1.1rem;
+      }
+
+      .experience-item h3 span {
+        color: var(--blue);
+      }
+
+      .experience-item ul {
+        margin: 0;
+        padding-left: 18px;
+        color: var(--muted);
+      }
+
+      .education-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px;
+      }
+
+      .education-card {
+        padding: 28px;
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        background: var(--surface);
+      }
+
+      .education-card h3 {
+        margin: 0 0 20px;
+        color: var(--blue);
+      }
+
+      .education-card ul {
+        margin: 0;
+        padding-left: 20px;
+        color: var(--muted);
+      }
+
+      .education-card li + li {
+        margin-top: 12px;
+      }
+
+      .education-card strong {
+        color: var(--text);
+      }
+
+      .innovation {
+        margin-top: 18px;
+        padding: 24px;
+        border-left: 3px solid var(--purple);
+        background: linear-gradient(90deg, rgb(191 155 255 / 12%), transparent);
+      }
+
+      .innovation h3 {
+        margin: 0 0 8px;
+      }
+
+      .innovation p {
+        margin: 0;
+        color: var(--muted);
+      }
+
       .contact {
         padding-bottom: 112px;
       }
@@ -525,7 +610,8 @@
         .hero,
         .about-content,
         .state-grid,
-        .contact-layout {
+        .contact-layout,
+        .education-grid {
           grid-template-columns: 1fr;
         }
 
@@ -575,6 +661,8 @@
         <a href="#sobre">Sobre mim</a>
         <a href="#especialidades">Especialidades</a>
         <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#formacao">Formação</a>
         <a href="#processo">Processo</a>
         <a href="#contato">Contato</a>
       </nav>
@@ -698,7 +786,7 @@
       <section class="container" id="projetos">
         <div class="section-heading">
           <p class="eyebrow">Experiência aplicada</p>
-          <h2>Projetos e soluções</h2>
+          <h2>Projetos pessoais e estudos</h2>
           <p>
             Projetos pessoais e estudos práticos publicados no GitHub, com foco
             em Flutter, arquitetura, APIs, estado e experiências mobile.
@@ -832,6 +920,145 @@
         </div>
       </section>
 
+      <section class="container" id="experiencia">
+        <div class="section-heading">
+          <p class="eyebrow">Experiência profissional</p>
+          <h2>Apps que trabalhei</h2>
+          <p>Projetos desenvolvidos, mantidos e aprimorados ao longo da minha jornada.</p>
+        </div>
+        <div class="projects">
+          <article class="project">
+            <span class="project-number">ENERGIA</span>
+            <h3>Copel</h3>
+            <p>Desenvolvimento e manutenção de aplicativo do setor de energia com Flutter e Dart.</p>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">APIs</span><span class="tag">Testes</span></div>
+          </article>
+          <article class="project">
+            <span class="project-number">FINANCEIRO</span>
+            <h3>Target Bank</h3>
+            <p>Funcionalidades para aplicações financeiras, controle e abastecimento de frota.</p>
+            <div class="tags"><span class="tag">REST</span><span class="tag">Flutter</span><span class="tag">Agile</span></div>
+          </article>
+          <article class="project">
+            <span class="project-number">GEOLOCALIZAÇÃO</span>
+            <h3>Rotas Seguras</h3>
+            <p>Aplicativo de rastreamento GPS com integração HERE Maps e melhorias de arquitetura.</p>
+            <div class="tags"><span class="tag">HERE Maps</span><span class="tag">MobX</span><span class="tag">Flutter</span></div>
+          </article>
+          <article class="project">
+            <span class="project-number">PRODUTOS DIGITAIS</span>
+            <h3>Ambev / Iegra</h3>
+            <p>Aplicações mobile, web e back-end com integrações REST e GraphQL, testes e CI/CD.</p>
+            <div class="tags"><span class="tag">React</span><span class="tag">.NET</span><span class="tag">Docker</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="state-section" id="jornada">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Experiência profissional</p>
+            <h2>Minha jornada</h2>
+          </div>
+          <div class="experience">
+            <article class="experience-item">
+              <div class="experience-date">05/2026 – 10/2026</div>
+              <div>
+                <h3>Desenvolvedora Flutter · <span>Tata Consultancy Services (TCS)</span></h3>
+                <ul>
+                  <li>Desenvolvimento e manutenção de aplicativo do setor de energia com Flutter/Dart.</li>
+                  <li>Integração com APIs e desenvolvimento de componentes reutilizáveis.</li>
+                  <li>Testes e correção de bugs em equipe ágil.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-date">11/2025 – 03/2026</div>
+              <div>
+                <h3>Desenvolvedora Full Stack · <span>Iegra</span></h3>
+                <ul>
+                  <li>Aplicações mobile, web e back-end com Flutter, React e .NET.</li>
+                  <li>Integração com APIs REST e GraphQL, validação de contratos e tratamento de erros.</li>
+                  <li>Testes automatizados, staging, code review, Docker e pipelines CI/CD.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-date">12/2024 – Atualmente</div>
+              <div>
+                <h3>Desenvolvedora Flutter Mobile · <span>Freelancer</span></h3>
+                <ul>
+                  <li>Projetos para logística, supermercado, e-commerce e CrossFit.</li>
+                  <li>Leitura de código de barras, fluxos de entrega e componentes reutilizáveis.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-date">03/2024 – 01/2025</div>
+              <div>
+                <h3>Desenvolvedora Flutter · <span>Always Seven</span></h3>
+                <ul>
+                  <li>Flutter Web responsivo e mobile, backoffice, produtos de IA e soluções financeiras.</li>
+                  <li>Gerenciamento de estado com GetX, integração REST, testes e publicação nas lojas.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-date">10/2023 – 02/2024</div>
+              <div>
+                <h3>Desenvolvedora Flutter · <span>GPS Rotas Seguras</span></h3>
+                <ul>
+                  <li>Referência técnica de equipe e integração com HERE Maps/SDKs de geolocalização.</li>
+                  <li>Arquitetura modular com MobX, publicação e manutenção em produção.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="experience-date">09/2020 – 10/2023</div>
+              <div>
+                <h3>Analista de QA e Sustentação · <span>TargetBank</span></h3>
+                <ul>
+                  <li>Testes funcionais e de usabilidade, reporte de bugs no Jira.</li>
+                  <li>Análise de incidentes e validação de correções.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="container" id="formacao">
+        <div class="section-heading">
+          <p class="eyebrow">Formação e cursos</p>
+          <h2>Formação acadêmica &amp; cursos</h2>
+        </div>
+        <div class="education-grid">
+          <article class="education-card">
+            <h3>Formação acadêmica</h3>
+            <ul>
+              <li><strong>Engenharia de Computação</strong><br />UTFPR · Em andamento, previsão de conclusão: 2029</li>
+              <li><strong>Pós-graduação em Engenharia de Software</strong><br />Descomplica · 2024 – 2025</li>
+              <li><strong>Bacharelado em Engenharia Civil</strong><br />Universidade Estácio de Sá · 06/2011 – 2015</li>
+            </ul>
+          </article>
+          <article class="education-card">
+            <h3>Formação complementar e cursos</h3>
+            <ul>
+              <li>AWS re/Start – Formação em Computação em Nuvem, Escola da Nuvem</li>
+              <li>Dart e Flutter – Alura</li>
+              <li>Dart e Flutter – Academia do Flutter</li>
+              <li>Git/GitHub – Dio</li>
+              <li>SQL – Alura</li>
+              <li>Minimal API – Macoratti</li>
+            </ul>
+          </article>
+        </div>
+        <div class="innovation">
+          <h3>Projetos de inovação</h3>
+          <p><strong>Bolsista em Inovações Tecnológicas – Porang (07/2024 – 09/2024)</strong><br />Criação de aplicativo de alerta para situações de emergência em barragens, utilizando ValueNotifier e Flutter Modular, com entrega de MVP no programa Conecta Startups.</p>
+        </div>
+      </section>
+
       <section class="container contact" id="contato">
         <div class="section-heading">
           <p class="eyebrow">Vamos conversar?</p>
@@ -864,6 +1091,12 @@
                 rel="noopener"
               >
                 GitHub <span>Ver repositórios ↗</span>
+              </a>
+              <a class="contact-link" href="mailto:cinthiadutra@gmail.com">
+                E-mail <span>cinthiadutra@gmail.com</span>
+              </a>
+              <a class="contact-link" href="https://wa.me/5521999005171" target="_blank" rel="noopener">
+                WhatsApp <span>(21) 99900-5171 ↗</span>
               </a>
               <a
                 class="contact-link"
