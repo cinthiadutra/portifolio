@@ -443,12 +443,74 @@
       }
 
       .contact {
-        text-align: center;
+        padding-bottom: 112px;
       }
 
       .contact .section-heading {
-        margin-right: auto;
-        margin-left: auto;
+        max-width: 700px;
+      }
+
+      .contact-layout {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 18px;
+        align-items: stretch;
+      }
+
+      .contact-card {
+        padding: 30px;
+        border: 1px solid var(--border);
+        border-radius: 22px;
+        background:
+          linear-gradient(145deg, rgb(41 52 112 / 72%), transparent 75%),
+          var(--surface);
+      }
+
+      .contact-card h3 {
+        margin: 0 0 12px;
+        color: var(--text);
+        font-size: 1.35rem;
+      }
+
+      .contact-card p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      .contact-links {
+        display: grid;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .contact-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 15px 16px;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      .contact-link span {
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+
+      .contact-link:hover,
+      .contact-link:focus-visible {
+        border-color: var(--blue);
+        background: rgb(142 182 255 / 8%);
+      }
+
+      .contact-note {
+        display: block;
+        margin-top: 20px;
+        color: var(--muted);
+        font-size: 0.85rem;
       }
 
       footer {
@@ -462,7 +524,8 @@
       @media (max-width: 800px) {
         .hero,
         .about-content,
-        .state-grid {
+        .state-grid,
+        .contact-layout {
           grid-template-columns: 1fr;
         }
 
@@ -772,32 +835,65 @@
       <section class="container contact" id="contato">
         <div class="section-heading">
           <p class="eyebrow">Vamos conversar?</p>
-          <h2>Entre em contato</h2>
+          <h2>Vamos construir algo juntos?</h2>
           <p>
-            Tem um produto em mente ou quer saber mais sobre meu trabalho?
-            Fale comigo.
+            Tem um produto em mente, uma oportunidade ou quer saber mais sobre
+            meu trabalho? Estou disponível para conversar.
           </p>
         </div>
-        <div class="actions">
-          <a
-            class="button"
-            href="https://www.linkedin.com/in/cinthiasoudutra/"
-            target="_blank"
-            rel="noopener"
-          >
-            LinkedIn
-          </a>
-          <a
-            class="button secondary"
-            href="https://github.com/cinthiadutra"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
-        </div>
-        <div class="socials">
-          <a href="Cinthia-Dutra-Portfolio.pdf" download>Baixar portfólio em PDF</a>
+        <div class="contact-layout">
+          <article class="contact-card">
+            <h3>Entre em contato</h3>
+            <p>
+              Escolha o canal que preferir. Você também pode conhecer meus
+              projetos e acompanhar meu trabalho pelas redes.
+            </p>
+            <div class="contact-links">
+              <a
+                class="contact-link"
+                href="https://www.linkedin.com/in/cinthiasoudutra/"
+                target="_blank"
+                rel="noopener"
+              >
+                LinkedIn <span>Enviar mensagem ↗</span>
+              </a>
+              <a
+                class="contact-link"
+                href="https://github.com/cinthiadutra"
+                target="_blank"
+                rel="noopener"
+              >
+                GitHub <span>Ver repositórios ↗</span>
+              </a>
+              <a
+                class="contact-link"
+                href="Cinthia-Dutra-Portfolio.pdf"
+                download
+              >
+                Portfólio em PDF <span>Baixar arquivo ↓</span>
+              </a>
+            </div>
+          </article>
+          <article class="contact-card">
+            <h3>O que posso fazer por você?</h3>
+            <p>
+              Desenvolvimento de aplicações mobile e web, integração de APIs,
+              organização de arquitetura e evolução de produtos Flutter.
+            </p>
+            <div class="actions">
+              <a
+                class="button"
+                href="https://www.linkedin.com/in/cinthiasoudutra/"
+                target="_blank"
+                rel="noopener"
+              >
+                Falar pelo LinkedIn
+              </a>
+            </div>
+            <small class="contact-note">
+              Ao clicar, você será direcionado para o meu perfil no LinkedIn.
+            </small>
+          </article>
         </div>
       </section>
     </main>
